@@ -113,7 +113,7 @@
                     </div>
                 </div>
                 <div class="conhecimento-img-wrapper">
-                    <img src="imagens/conhecimentos.png" alt="imagem conhecimento">
+                    <img src="" alt="imagem conhecimento">
                 </div>
             </section>
 
@@ -146,7 +146,7 @@
                     <h1>Faça um orçamento</h1>
                     <form action="">
                         <label for="qtde">Quantidade de Páginas</label>
-                        <input type="number" name="qtde" id="qtde">
+                        <input type="number" min="1" name="qtde" id="qtde">
                         <label for="js">Preciso de um script JS</label>
                         <input type="checkbox" name="js" id="js">
                         <label>Layout</label>
@@ -161,7 +161,8 @@
                             </div>
                         </div>
                         <label for="prazo">Prazo</label>
-                        <input type="range" name="prazo" id="prazo">
+                        <input type="range" name="prazo" id="prazo" min="1" max="10">
+                        <label id="preco">R$ 0,00</label>
                         <button class="btn btn-orcamento" type="submit">Enviar</button>
                     </form>
                 </div>
